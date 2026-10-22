@@ -10,15 +10,17 @@ I build the dashboards, reports and data pipelines that operations teams use eve
 
 ### [PBJ Staffing Explorer](https://github.com/daniburr7887/pbj-staffing-explorer) · [▶ Live dashboard](https://danielleburr.shinyapps.io/pbj-staffing-explorer/)
 
+[![PBJ Staffing Explorer: state staffing table beside a county map of Texas](https://raw.githubusercontent.com/daniburr7887/pbj-staffing-explorer/main/docs/img/dashboard-states.png)](https://danielleburr.shinyapps.io/pbj-staffing-explorer/?tab=States)
+
 How well staffed are U.S. nursing homes, and how much of that staffing comes from agency workers? This project turns CMS's public Payroll-Based Journal data (about 5M facility-day rows a year) into a full analytics stack.
 
 - **Pipeline:** finds new quarterly releases automatically in the CMS data catalog and builds a DuckDB warehouse from layered SQL models (staging → dimension → fact → rollup)
-- **Dashboard:** an R Shiny app comparing all states and any of ~14,600 facilities on hours per resident day and contract-staff share
+- **Dashboard:** an R Shiny app with national trends, clickable county maps, a weekday-vs-weekend comparison, and a drill-down into any of ~14,600 facilities, with hover tooltips throughout
 - **Tested:** testthat suite built on a hand-calculated fixture, covering the details that break silently: leading zeros in provider IDs, zero-census days, and weighted vs. naive averages
 - **Built for deployment:** ships a 5 MB Parquet extract instead of the 385 MB warehouse; Slack bot in progress
 - **Documented:** a [design decision log](https://github.com/daniburr7887/pbj-staffing-explorer/blob/main/docs/decisions.md) explaining each choice and its trade-offs
 
-`R` `Shiny` `SQL` `DuckDB` `Parquet` `testthat` `Python` `Slack API`
+`R` `Shiny` `ggiraph` `SQL` `DuckDB` `Parquet` `testthat` `Python` `Slack API`
 
 ***
 
