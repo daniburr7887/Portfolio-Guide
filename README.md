@@ -1,46 +1,46 @@
-# Portfolio-Guide
+# Danielle Davis | Business Intelligence Analyst
 
-Hi friend! 👋
+I build the dashboards, reports and data pipelines that operations teams use every day. Recently that has meant moving a company's Tableau reporting into R Shiny apps and Slack-delivered reports: rebuilding the logic in code, checking every number against the original, and keeping it fast at production scale.
 
-Welcome to my Portfolio Guide where you'll find my analytics projects done through courses and independently.
-
-Please connect with me via [LinkedIn](https://www.linkedin.com/in/danielle-davis-560152142/) to discuss my projects and any upcoming opportunities!
-
-## 📚 Table of Contents
-
-- [R](#r)
-- [SQL](#sql)
-- [Tableau](#tableau)
-
-_Click on the project titles in BLUE to view each project!_
+📫 [LinkedIn](https://www.linkedin.com/in/danielle-davis-560152142/)
 
 ***
 
-# R
+## ⭐ Featured project
 
-Skills:
-Libraries: tidyverse, dplyr, ggplot2, lubridate
+### [PBJ Staffing Explorer](https://github.com/daniburr7887/pbj-staffing-explorer) · [▶ Live dashboard](https://danielleburr.shinyapps.io/pbj-staffing-explorer/)
 
-| Project Name | Skills | Description | Libraries |    
-|---|---|---|---|
-| [Google Data Analytics Capstone - Bellabeat Fitness Tracker Case Study](https://github.com/davis7887/Google-Data-Analytics-Capstone) |   Data cleaning, wrangling, and visualization | Analysis of Bellabeat's user fitness tracker data to determine what patterns and trends exist and how these will effect future marketing strategies. | tidyverse, dplyr, ggplot2, lubridate |   
+How well staffed are U.S. nursing homes, and how much of that staffing comes from agency workers? This project turns CMS's public Payroll-Based Journal data (about 5M facility-day rows a year) into a full analytics stack.
+
+- **Pipeline:** finds new quarterly releases automatically in the CMS data catalog and builds a DuckDB warehouse from layered SQL models (staging → dimension → fact → rollup)
+- **Dashboard:** an R Shiny app comparing all states and any of ~14,600 facilities on hours per resident day and contract-staff share
+- **Tested:** testthat suite built on a hand-calculated fixture, covering the details that break silently: leading zeros in provider IDs, zero-census days, and weighted vs. naive averages
+- **Built for deployment:** ships a 5 MB Parquet extract instead of the 385 MB warehouse; Slack bot in progress
+- **Documented:** a [design decision log](https://github.com/daniburr7887/pbj-staffing-explorer/blob/main/docs/decisions.md) explaining each choice and its trade-offs
+
+`R` `Shiny` `SQL` `DuckDB` `Parquet` `testthat` `Python` `Slack API`
 
 ***
 
-# SQL
+## 🛠️ Skills
 
-Level:
-Functions:
+| Area | Tools |
+|---|---|
+| **Languages** | SQL, R, Python |
+| **Dashboards & BI** | R Shiny (bslib, DT), Tableau, ggplot2 |
+| **Data platforms** | Amazon Redshift, PostgreSQL, DuckDB |
+| **Reporting automation** | Slack bots and scheduled reports, Excel exports |
+| **Engineering practice** | Git/GitHub, code review, automated testing, Posit deployment |
+| **AI-assisted development** | Claude Code for building, debugging and reviewing production code |
 
-| Project Name | Description | Functions |
+***
+
+## 📂 Earlier projects
+
+Course and self-directed analyses from when I started in analytics.
+
+| Project | Tools | Description |
 |---|---|---|
-| [AllTrails US Hiking Guide](https://github.com/davis7887/AllTrails-US-Hiking-Guide) | A project inspired from my love of finding beautiful hikes, I analyzed data gathered from AllTrails to determine the top hikes in the United States based on overall ratings as well as by features included in the hikes. I also analyzed the concentrations of difficult and easy hikes by state. | Aggregations, Group/Order By, Limit, Temporary Tables | 
-| [COVID-19 Analysis on USA outbound International Travel](https://github.com/davis7887/COVID-19-Analysis) | Inspired by Alex The Analyst's [COVID-19 project](https://www.youtube.com/watch?v=qfyynHBFOsM&list=PLUaB-1hjhk8H48Pj32z4GZgGWyylqv85f&index=1), this analysis tracks the amount of covid cases, vaccinations, and USA international travel outbound departures from 2019-2022. | Aggregate Functions, Joins, CTE's, Temporary Tables and Creating Views. |
-***
-
-# Tableau
-
-| Project Name | Description | Dashboard |
-|---|---|---|
-| [AllTrails US Hiking Guide](https://github.com/davis7887/AllTrails-US-Hiking-Guide) | A project inspired from my love of finding beautiful hikes, I analyzed data gathered from AllTrails to determine the top hikes in the United States based on overall ratings as well as by features included in the hikes. I also analyzed the concentrations of difficult and easy hikes by state. | [Link](https://public.tableau.com/views/USAlltrailsHikingGuide/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) |
-
+| [Bellabeat Fitness Tracker Case Study](https://github.com/davis7887/Google-Data-Analytics-Capstone) | R (tidyverse, ggplot2, lubridate) | Google Data Analytics capstone: analyzed fitness tracker usage patterns to inform a marketing strategy. |
+| [AllTrails US Hiking Guide](https://github.com/davis7887/AllTrails-US-Hiking-Guide) · [Dashboard](https://public.tableau.com/views/USAlltrailsHikingGuide/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) | SQL, Tableau | Ranked top U.S. hikes by rating and features, and mapped the concentration of easy vs. difficult trails by state. |
+| [COVID-19 & US International Travel](https://github.com/davis7887/COVID-19-Analysis) | SQL | Tracked cases, vaccinations and outbound international travel from 2019 to 2022 using joins, CTEs, temp tables and views. Inspired by [Alex The Analyst's COVID-19 project](https://www.youtube.com/watch?v=qfyynHBFOsM&list=PLUaB-1hjhk8H48Pj32z4GZgGWyylqv85f&index=1). |
