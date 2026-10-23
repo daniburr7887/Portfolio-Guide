@@ -17,10 +17,10 @@ How well staffed are U.S. nursing homes, and how much of that staffing comes fro
 - **Pipeline:** finds new quarterly releases automatically in the CMS data catalog and builds a DuckDB warehouse from layered SQL models (staging → dimension → fact → rollup)
 - **Dashboard:** an R Shiny app with national trends, clickable county maps, a weekday-vs-weekend comparison, and a drill-down into any of ~14,600 facilities, with hover tooltips throughout
 - **Tested:** testthat suite built on a hand-calculated fixture, covering the details that break silently: leading zeros in provider IDs, zero-census days, and weighted vs. naive averages
-- **Built for deployment:** ships a 5 MB Parquet extract instead of the 385 MB warehouse; Slack bot in progress
+- **Built for deployment:** ships a 5 MB Parquet extract instead of the 385 MB warehouse
 - **Documented:** a [design decision log](https://github.com/daniburr7887/pbj-staffing-explorer/blob/main/docs/decisions.md) explaining each choice and its trade-offs
 
-`R` `Shiny` `ggiraph` `SQL` `DuckDB` `Parquet` `testthat` `Python` `Slack API`
+`R` `Shiny` `ggiraph` `SQL` `DuckDB` `Parquet` `testthat`
 
 ***
 
