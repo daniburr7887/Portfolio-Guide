@@ -1,6 +1,6 @@
 # Danielle Davis | Business Intelligence Analyst
 
-I build the dashboards, reports and data pipelines that operations teams use every day. Recently that has meant moving a company's Tableau reporting into R Shiny apps and Slack-delivered reports: rebuilding the logic in code, checking every number against the original, and keeping it fast at production scale.
+I build the dashboards, reports and data pipelines that operations teams use every day. Recently that has meant moving a company's Tableau reporting into Shiny apps (Python) and Slack-delivered reports: rebuilding the logic in code, checking every number against the original, and keeping it fast at production scale.
 
 📫 [LinkedIn](https://www.linkedin.com/in/danielle-davis-560152142/)
 
@@ -29,7 +29,7 @@ How well staffed are U.S. nursing homes, and how much of that staffing comes fro
 | Area | Tools |
 |---|---|
 | **Languages** | SQL, R, Python |
-| **Dashboards & BI** | R Shiny (bslib, DT), Tableau, ggplot2 |
+| **Dashboards & BI** | Shiny for Python, R Shiny (bslib, DT), Tableau, ggplot2 |
 | **Data platforms** | Amazon Redshift, PostgreSQL, DuckDB |
 | **Reporting automation** | Slack bots and scheduled reports, Excel exports |
 | **Engineering practice** | Git/GitHub, code review, automated testing, Posit deployment |
