@@ -24,6 +24,16 @@ How well staffed are U.S. nursing homes, and how much of that staffing comes fro
 
 ***
 
+## 📝 Case study
+
+### [Moving a company's BI from Tableau to code](case-studies/tableau-to-shiny-migration.md)
+
+How a small team moved ~70 Tableau dashboards and reports to Shiny for Python apps and an on-demand Slack report bot, and what it took to make the numbers match and keep things fast in production: hidden Tableau filters, time zones lost in replication, hour-long database lock pile-ups, and dropdowns with 40,000 options.
+
+`SQL` `Redshift` `Shiny for Python` `Tableau` `Slack automation` `performance tuning`
+
+***
+
 ## 🛠️ Skills
 
 | Area | Tools |
